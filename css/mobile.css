@@ -1,0 +1,152 @@
+html {
+    background-color: #387886;
+}
+
+a {
+    display: block;
+}
+
+.section, .section__header  {
+    background-color: #F9F2DA;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.section__heading, .section__h1 , .section__nav, .section__nadpis{
+    background-color: #94B087;
+    text-align: center;
+    margin: 0;
+}
+.section__heading {
+    margin: 0.5em;
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+.section__nadpis {
+    margin-bottom: 1em;
+}
+.section__h1{
+    margin-bottom: 0.25em;
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0.5em;
+    
+}
+.section__nav {
+    font-size: large;
+}
+
+.navigation__item{
+    list-style: none;
+}
+
+.navigation__item--decoration {
+    text-decoration: none;
+    color: black;
+}
+
+.section__text {
+    background-color: #8AAEA6;
+    margin: 0;
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+.section__photo--radius {
+    border-radius: 0.5em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5em;
+    
+}
+
+.section__gallery > * {
+    flex-basis: 25vw;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.section_photo.serie {
+    width: 15%;
+}
+
+.section__serie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 820px) {
+
+    .section_photo.serie{
+        width: 20%;
+    }
+    .section__header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navigation{
+        width: 50vw;
+    }
+    .section__nadpis{
+        padding: 0.1em 3em;
+        margin: 0;
+    }
+    .section__photo--left {
+        width: 40vw;
+        order: -1;
+    }
+    .section__text {
+        max-width: 35vw;
+        margin-right: 3em;
+    }
+    .section__photo--center, .section__photo--right, .section__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .section__genre--right{
+        width: 40vw;
+    }
+}
+  @media only screen and (min-width: 1000px) {
+
+    .section_photo.serie{
+        width: 25%;
+    }
+
+  }
+
+  @media only screen and (min-width: 400px) and (max-width: 480px){
+
+    .section_photo.serie{
+        width: 13%;
+        
+    }
+  }
+
+  @media only screen and (max-width: 430px){
+
+    .section_photo.serie{
+        margin: 1.5em;
+    }
+  }
